@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Extension Sample",
+  "description": "Chrome Extension Sample",
+  "version": "1.0",
+  "options_ui": {
+    "page": "options.html"
+  },
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://saas10.encollabo.jp/ibj/*"
+      ],
+      "js": [
+        "js/vendor.js",
+        "js/main.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
