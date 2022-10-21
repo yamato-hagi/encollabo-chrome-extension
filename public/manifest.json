@@ -13,7 +13,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://saas10.encollabo.jp/ibj/*"
+        "https://saas10.encollabo.jp/*"
       ],
       "js": [
         "js/vendor.js",
