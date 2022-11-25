@@ -4,24 +4,26 @@ Chrome Extension Sample
 
 ## Prerequisites
 
-* [node + npm](https://nodejs.org/) (Current Version)
+- [node + npm](https://nodejs.org/) (Current Version)
 
 ## Option
 
-* [Visual Studio Code](https://code.visualstudio.com/)
+node 16.16.0
+
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Includes the following
 
-* TypeScript
-* Webpack
-* React
-* Jest
-* Example Code
-    * Chrome Storage
-    * Options Version 2
-    * content script
-    * count up badge number
-    * background
+- TypeScript
+- Webpack
+- React
+- Jest
+- Example Code
+  - Chrome Storage
+  - Options Version 2
+  - content script
+  - count up badge number
+  - background
 
 ## Setup
 
@@ -56,4 +58,5 @@ Run watch mode.
 Load `dist` directory
 
 ## Test
+
 `npx jest` or `npm run test`

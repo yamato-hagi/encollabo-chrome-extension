@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "勤怠管理を便利に",
-  "description": "encollaboなどの勤怠管理の仕事効率化",
+  "description": "勤怠管理の仕事効率化",
   "version": "1.0",
   "options_ui": {
     "page": "options.html"
