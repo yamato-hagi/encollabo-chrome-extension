@@ -69,11 +69,12 @@ const Main = (): JSX.Element => {
       outTimeButtonEle!.style.display = "none";
     }
   };
-
+  //userNameInputEleが自動入力だと拡張機能だけ空になってて動かない
   !!userNameInputEle &&
-    userNameInputEle!.value.length > 1 &&
-    passwordInputEle!.value.length > 1 &&
-    loginButtonEle &&
+    !!passwordInputEle &&
+    !!loginButtonEle &&
+    userNameInputEle.value.length > 1 &&
+    passwordInputEle.value.length > 1 &&
     loginButtonEle.click();
 
   !!headerEle &&
