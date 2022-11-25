@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "勤怠管理を便利に",
   "description": "勤怠管理の仕事効率化",
-  "version": "1.0",
+  "version": "1.1",
   "options_ui": {
     "page": "options.html"
   },
@@ -12,21 +12,14 @@
   },
   "content_scripts": [
     {
-      "matches": [
-        "https://saas10.encollabo.jp/*"
-      ],
-      "js": [
-        "js/vendor.js",
-        "js/main.js"
-      ]
+      "matches": ["https://saas10.encollabo.jp/*"],
+      "js": ["js/vendor.js", "js/main.js"]
     }
   ],
   "background": {
     "service_worker": "js/background.js"
   },
-  "host_permissions": [
-    "https://saas10.encollabo.jp/*"
-  ],
+  "host_permissions": ["https://saas10.encollabo.jp/*"],
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'"
   }
